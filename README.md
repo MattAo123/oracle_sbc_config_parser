@@ -1,4 +1,4 @@
-# oracle SBC Config Parser
+# Oracle SBC Config Parser
 
 Python function to parse and transform Oracle SBCs configuration in a dictionary.
 
