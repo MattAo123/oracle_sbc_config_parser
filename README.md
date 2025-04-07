@@ -26,8 +26,8 @@ The script 'parser_with_netmiko.py' let you insert SBC details (ip, username, pa
 ### How to use it
 
 #### simple_parser.py
-Open the py file, edit the show_test variable putting the output you wanna parse (KEEP ALL THE INDENTATION)
-
+Open the py file, edit the show_test variable putting the output you wanna parse.
+>NOTE: use triple ' when creating the variable, to keep all the indentation!
 ```python
 ---
 show_test = '''certificate-record
