@@ -9,11 +9,11 @@ Packages required are in requirements.txt
 
 It's recommended to crate a virtual environment, activate it and then install the packages:
 
-'''sh
+```sh
 $ python3 -m venv ./VENV-NAME
 $ .\VENV-NAME\Scripts\Activate.ps1
 $ pip install -r requirements.txt
-'''
+```
 
 >NOTE: chose a name for virtual environment and replace the `VENV-NAME` string
 
@@ -28,7 +28,7 @@ The script 'parser_with_netmiko.py' let you insert SBC details (ip, username, pa
 #### simple_parser.py
 Open the py file, edit the show_test variable putting the output you wanna parse (KEEP ALL THE INDENTATION)
 
-'''yaml
+```python
 ---
 show_test = '''certificate-record
         name                                    Mgmt
@@ -60,21 +60,21 @@ local-policy
         policy-attribute
                 next-hop                                lrt:ToCUCM
 ---
-'''
+```
 
 and run the script.
 
 #### parser_with_netmiko.py
 Open the py file, edit the ip, username, password variables and change the command sent to the CLI based on your needs
 
-'''yaml
+```python
 ---
 ip = '1.1.1.1'
 username = 'admin'
 password = 'password123'
 show_test = cli.send_command("show running-config tls-profile short")
 ---
-'''
+```
 
 and run the script.
 
